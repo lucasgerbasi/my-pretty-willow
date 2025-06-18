@@ -2,18 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <title>Willow</title>
 </head>
 <body>
     <canvas id="sky"></canvas>
+    <canvas id="constellation-canvas"></canvas>
     <h1 id="title">FOR MY WILLOW</h1>
+    <!-- Spotify Playlist Embed -->
+<div id="spotify-player">
+    <iframe 
+        src="https://open.spotify.com/embed/playlist/5vt5ZbAcZtexVlHh0wQrDi?utm_source=generator"
+        width="550" 
+        height="400" 
+        frameborder="0" 
+        allowtransparency="true" 
+        allow="encrypted-media">
+    </iframe>
+    <p style="color: white; font-size: small;">
+        Volume might be high 💖
+    </p>
+</div>
     
     <!-- Container for ASCII animation -->
     <div id="ascii-container"></div>
 
-    <div id="timer"></div>
+    <div id="timer-container">
+        <div id="timer"></div>
+    </div>
+    <div id="doodlington">
+        <img src="doodlington.jpg" id="doodle">
+    </div>
+    
+
+    <!-- Typewriter animation letter -->
+<div id="typewriter-container">
+    <button id="start-typing-btn">Letter 💖</button>
+    <p id="typewriter-letter"></p>
+</div>
+
 
     <script src="script.js"></script>
 </body>
